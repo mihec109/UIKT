@@ -1,0 +1,25 @@
+﻿@model projekt.Models.DokumentiModel
+
+@{
+    ViewBag.Title = "File Upload and Download";
+}
+
+<h2>File Upload and Download</h2>
+
+<form asp-action="UploadFiles" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="obrazec">Obrazec:</label>
+        <input type="file" id="obrazec" name="obrazec" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="pravnaPodlaga">Pravna Podlaga:</label>
+        <input type="file" id="pravnaPodlaga" name="pravnaPodlaga" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="dodato">Dodato:</label>
+        <input type="file" id="dodato" name="dodato" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDjM6C_fGDAxU37LsIHegBDBUQFnoECA0QAQ&url=https%3A%2F%2Fwww.gov.si%2Fassets%2Fministrstva%2FMF%2FJavno-premozenje%2FDOKUMENTI%2FDP-Dokumenti%2FDRZAVNE-POMOCI%2FMF%2FObrazec_prigl_DeMinimis_mar2016.docx&usg=AOvVaw21ARqQdOFUdwpvfUk6WZMC&opi=89978449" class="btn btn-success">Download</a>
